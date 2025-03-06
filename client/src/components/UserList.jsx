@@ -61,7 +61,7 @@ export default function UserList() {
                 <UserInfo 
                     userId={userIdInfo}
                 /> 
-                )}
+            )}
         
             <div className="table-wrapper">
                 <div className="overlays">
