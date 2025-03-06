@@ -46,6 +46,10 @@ export default function UserList() {
         
     }
 
+    const userInfoCloseHandler = () => {
+        setUserIdInfo(null);
+    }
+
     return (
         <section className="card users-container">
            <Search />
@@ -60,6 +64,7 @@ export default function UserList() {
            {userIdInfo && (
                 <UserInfo 
                     userId={userIdInfo}
+                    onClose={userInfoCloseHandler}
                 /> 
             )}
         
